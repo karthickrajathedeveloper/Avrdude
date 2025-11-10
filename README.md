@@ -52,3 +52,49 @@ Explanation:
 
 "file.hex:i" → File path and format (i = Intel HEX)
 
+---
+## 💾 Read (Backup) HEX file from Arduino UNO
+
+Use this command to read the current flash memory from your Arduino and save it as a .hex file.
+```
+"C:\Users\kr\Downloads\AVR_Files\avrdude" "-C C:\Users\kr\Downloads\AVR_Files\avrdude.conf" -p atmega328p -c arduino -P COM6 -U flash:r:"C:\Users\kr\Desktop\AfterRead.ino.hex:i"
+```
+# Explanation:
+
+Reads the program from the UNO’s flash memory
+
+Saves it to C:\Users\kr\Desktop\AfterRead.ino.hex
+
+---
+
+##🧩 Notes
+
+Make sure Arduino IDE is closed before running avrdude (to avoid port conflicts).
+
+Run Command Prompt as Administrator if permission errors occur.
+
+Always check that the COM port number is correct.
+
+You can modify paths as per your folder locations.
+
+---
+
+## 🧠 Example Workflow
+
+Upload program using Arduino IDE (e.g., Blink)
+
+Read flash → backup HEX
+
+Erase or reflash Arduino using write command
+
+Verify both files using a HEX compare tool
+
+---
+
+## Author 
+[karthickrajathedeveloper](https://github.com/karthickrajathedeveloper)
+
+## LICENSE
+[MIT LICENSE](LICENSE)
+
+
