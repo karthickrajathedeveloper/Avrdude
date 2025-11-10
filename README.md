@@ -67,7 +67,7 @@ Saves it to C:\Users\kr\Desktop\AfterRead.ino.hex
 
 ---
 
-##🧩 Notes
+## 🧩 Notes
 
 Make sure Arduino IDE is closed before running avrdude (to avoid port conflicts).
 
